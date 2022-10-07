@@ -23,17 +23,9 @@ export default function Contacts({
     navigate("/login");
   };
 
-  const handleSearchContact = (e) => {
-    const filter = contacts.filter((item) => {
-      if (e === "") {
-        return contacts;
-      } else {
-        return item.username.toLowerCase().includes(e.toLowerCase());
-      }
-    });
-    console.log(filter);
-    setContacts(filter);
-  };
+  const detailFilter = contacts.filter((item) => {
+    return item.username.toLowerCase().includes(searchValue.toLowerCase());
+  });
 
   useEffect(() => {
     if (currentUser) {
@@ -82,12 +74,12 @@ export default function Contacts({
             <input
               type="text"
               placeholder="Search or start a new chat ..."
-              onChange={(e) => handleSearchContact(e.target.value)}
+              onChange={(e) => setSearchValue(e.target.value)}
             />
           </div>
         </div>
         <div className="contacts">
-          {contacts.map((contact, index) => {
+          {detailFilter.map((contact, index) => {
             return (
               <div
                 className={`contact ${
