@@ -82,6 +82,7 @@ export default function Contacts({
           {detailFilter.map((contact, index) => {
             return (
               <div
+              key={contact._id}
                 className={`contact ${
                   index === currentSelected ? "selected" : ""
                 }`}

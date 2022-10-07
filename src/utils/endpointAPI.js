@@ -1,5 +1,5 @@
-export const server = 'http://localhost:5000'
-// export const server = 'https://fair-gold-moth-tam.cyclic.app'
+// export const server = 'http://localhost:5000'
+export const server = 'https://fair-gold-moth-tam.cyclic.app'
 
 
 export const registerRoute = `${server}/api/auth/register`

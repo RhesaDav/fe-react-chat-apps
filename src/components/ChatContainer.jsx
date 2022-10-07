@@ -85,7 +85,7 @@ export default function ChatContainer({ currentChat, currentUser, socket }) {
           <div className="chat-messages">
             {messages.map((msg) => {
               return (
-                <div ref={scrollRef} key={uuidv4}>
+                <div ref={scrollRef} key={uuidv4()}>
                   <div
                     className={`message ${
                       msg.fromSelf ? "sended" : "received"
