@@ -1,0 +1,112 @@
+.inner {
+  display: flex;
+  .image-container {
+    background-color: #1e1e1e;
+    width: 45%;
+    height: 100vh;
+    display: flex;
+  }
+  .form-container {
+    background-color: #262626;
+    width: 55%;
+    height: 100vh;
+    padding: 150px 150px;
+    .inner-form {
+      text-align: left;
+      h5 {
+        margin: 10px 0px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: #ffb628;
+      }
+      h1 {
+        margin: 10px 0px;
+        color: #ffffff;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+      }
+      .form {
+        display: flex;
+        flex-direction: column;
+        .email {
+          display: flex;
+          flex-direction: column;
+          background-color: #343434;
+          align-items: flex-start;
+          padding: 10px 20px;
+          border-radius: 20px;
+          margin: 10px 0px;
+          label {
+            padding: 0 0.2em;
+            top: -0.5em;
+            left: 1em;
+            font-family: sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+            color: #808080;
+          }
+          input {
+            background-color: transparent;
+            border: transparent;
+            padding: 0.8em;
+            border-radius: 0.5em;
+            outline: none;
+          }
+        }
+        .password {
+          display: flex;
+          flex-direction: column;
+          background-color: #343434;
+          align-items: flex-start;
+          padding: 10px 20px;
+          border-radius: 20px;
+          margin: 10px 0px;
+          label {
+            padding: 0 0.2em;
+            top: -0.5em;
+            left: 1em;
+            font-family: sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+            color: #808080;
+          }
+          input {
+            background-color: transparent;
+            border: transparent;
+            padding: 0.8em;
+            border-radius: 0.5em;
+            outline: none;
+          }
+        }
+        button {
+          background: #ffb628;
+          width: 100%;
+          height: 50px;
+          padding: 10px;
+          border-radius: 15px;
+          margin: 10px 0px;
+          cursor: pointer;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 25px;
+          color: #262626;
+          transition: 0.5s ease-in-out;
+          &:hover {
+            background-color: blue;
+          }
+        }
+        h5 {
+          margin: 5px 0px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}

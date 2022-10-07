@@ -1,0 +1,53 @@
+.chat-input-container {
+    display: flex;
+    align-items: center;
+    background-color: #262626;
+    padding: 2rem 2rem;
+    padding-bottom: 2rem;
+    .input-container {
+        width: 100%;
+        border-radius: 2rem;
+        display: flex;
+        align-content: center;
+        gap: 2rem;
+        background-color: #393939;
+        padding: 1rem 0;
+        input {
+            width: 80%;
+            // height: 60%;
+            background-color: transparent;
+            color: wheat;
+            border: none;
+            padding-left: 1rem;
+            font-size: 1.2rem;
+            &::selection {
+                background-color: lightblue;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+        .submit {
+            padding: 0 3rem;
+            border-radius: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            border: none;
+            .emoji {
+                position: relative;
+                svg {
+                    font-size: 1.5rem;
+                    color: #858585;
+                    cursor: pointer;
+                }
+                .EmojiPickerReact {
+                    position: absolute;
+                    top: -484px;
+                    right: -50px;
+                }    
+            }
+        }
+    }
+}
